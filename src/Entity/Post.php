@@ -25,7 +25,7 @@ class Post
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @ApiFilter(SearchFilter::class, strategy="exact")
+     * @ApiFilter(SearchFilter::class, strategy="partial")
      */
     private $title;
 
